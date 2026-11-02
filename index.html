@@ -2,49 +2,12 @@
 <html>
 <head>
     <title>My Website</title>
-
-    <style>
-.image-map-container {
-    position: relative;
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-}
-
-.image-map-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.clickable-rect {
-    position: absolute;
-    /* Optional: Uncomment the background and border lines below while testing 
-       so you can see where your rectangles are positioned. */
-    /* background-color: rgba(255, 0, 0, 0.3); */
-    /* border: 2px dashed red; */
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-/* Optional hover effect to show users it's clickable */
-.clickable-rect:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}        
-    </style>
 </head>
 <body>
-    <div class="image-map-container">
-        <img src="map.jpg" usemap="#image-map" alt="Karte">
-    
-        <map name="image-map">
-            <area target="" alt="Alfred-Hoffmann-Brücke" title="Alfred-Hoffmann-Brücke" href="Alfred-Hoffmann-Brücke.html" coords="465,2,383,67" shape="rect">
-            <area target="" alt="Friedenstunnel" title="Friedenstunnel" href="Friedenstunnel.html" coords="72,621,165,664" shape="rect">
-            <area target="" alt="Marie-Bergmann-Brücke" title="Marie-Bergmann-Brücke" href="Marie-Bergmann-Brücke.html" coords="252,220,350,270" shape="rect">
-            <area target="" alt="Melchersbrücke" title="Melchersbrücke" href="Melchersbrücke.html" coords="160,182,250,248" shape="rect">
-            <area target="" alt="Wiegandbrücke" title="Wiegandbrücke" href="Wiegandbrücke.html" coords="254,0,327,78" shape="rect">
-            <area target="" alt="Riensberger See" title="Riensberger See" href="Riensberger-See.htmll" coords="780,112,862,275" shape="rect">
-        </map>
-    </div>
+   <object type="image/svg+xml"
+            data="map.svg"
+            style="width: 100%; max-width: 862px; height: auto;">
+        Interaktive Karte der Brücken
+    </object>
 </body>
 </html>
