@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 862 665">>
+
+    <image href="map.jpg"
+       x="0" y="0"
+       width="862" height="665"
+       preserveAspectRatio="none" />
+
+    <style>
+        .hotspot {
+            fill: rgba(255, 220, 0, 0.15);
+            stroke: transparent;
+            stroke-width: 2;
+            cursor: pointer;
+            transition: fill 0.2s, stroke 0.2s;
+        }
+
+        a:hover .hotspot,
+        a:focus .hotspot {
+            fill: rgba(255, 220, 0, 0.4);
+            stroke: #ff9900;
+        }
+    </style>
+
+    <a href="Alfred-Hoffmann-Brücke.html">
+        <title>Alfred-Hoffmann-Brücke</title>
+        <rect class="hotspot"
+              x="383" y="2" width="82" height="65"/>
+    </a>
+
+    <a href="Friedenstunnel.html">
+        <title>Friedenstunnel</title>
+        <rect class="hotspot"
+              x="72" y="621" width="93" height="43"/>
+    </a>
+
+    <a href="Marie-Bergmann-Brücke.html">
+        <title>Marie-Bergmann-Brücke</title>
+        <rect class="hotspot"
+              x="252" y="220" width="98" height="50"/>
+    </a>
+
+    <a href="Melchersbrücke.html">
+        <title>Melchersbrücke</title>
+        <rect class="hotspot"
+              x="160" y="182" width="90" height="66"/>
+    </a>
+
+    <a href="Wiegandbrücke.html">
+        <title>Wiegandbrücke</title>
+        <rect class="hotspot"
+              x="254" y="0" width="73" height="78"/>
+    </a>
+
+    <a href="Riensberger-See.html">
+        <title>Riensberger See</title>
+        <rect class="hotspot"
+              x="780" y="112" width="82" height="163"/>
+    </a>
+
+</svg>
