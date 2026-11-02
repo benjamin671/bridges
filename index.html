@@ -35,14 +35,16 @@
 </head>
 <body>
     <div class="image-map-container">
-        <!-- Your PNG image -->
-        <img src="map.jpg" alt="Interactive Map" width="862" height="665">
+        <img src="map.png" usemap="#image-map" alt="Karte">
     
-        <!-- Clickable Rectangle 1 -->
-        <a href="Alfred-Hoffmann-Brücke.html" class="clickable-rect" style="top: 20%; left: 10%; width: 25%; height: 30%;" title="Go to Page 1"></a>
-    
-        <!-- Clickable Rectangle 2 -->
-        <a href="Friedenstunnel.html" class="clickable-rect" style="top: 55%; left: 60%; width: 30%; height: 35%;" title="Go to Page 2"></a>
+        <map name="image-map">
+            <area target="" alt="Friedenstunnel" title="Friedenstunnel" href="friedenstunnel.html" coords="72,621,165,664" shape="rect">
+            <area target="" alt="Marie-Bergmann-Brücke" title="Marie-Bergmann-Brücke" href="marie-bergmann.html" coords="252,220,350,270" shape="rect">
+            <area target="" alt="Melchersbrücke" title="Melchersbrücke" href="melchersbruecke.html" coords="160,182,250,248" shape="rect">
+            <area target="" alt="Wiegandbrücke" title="Wiegandbrücke" href="wiegandbruecke.html" coords="254,0,327,78" shape="rect">
+            <area target="" alt="Alfred-Hoffmann-Brücke" title="Alfred-Hoffmann-Brücke" href="alfred-hoffmann.html" coords="465,2,383,67" shape="rect">
+            <area target="" alt="Riensberger See" title="Riensberger See" href="riensberger-see.html" coords="780,112,862,275" shape="rect">
+        </map>
     </div>
 </body>
 </html>
