@@ -2,6 +2,36 @@
 <html>
 <head>
     <title>My Website</title>
+
+    <style>
+.image-map-container {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-map-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.clickable-rect {
+    position: absolute;
+    /* Optional: Uncomment the background and border lines below while testing 
+       so you can see where your rectangles are positioned. */
+    /* background-color: rgba(255, 0, 0, 0.3); */
+    /* border: 2px dashed red; */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Optional hover effect to show users it's clickable */
+.clickable-rect:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}        
+    </style>
 </head>
 <body>
     <div class="image-map-container">
