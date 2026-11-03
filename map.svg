@@ -20,8 +20,8 @@
 
         a:hover .hotspot,
         a:focus .hotspot {
-            fill: rgba(255, 220, 0, 0.4);
-            stroke: #ff9900;
+            fill: rgba(0, 0, 255, 0.4);
+            stroke: #0000ff;
         }
     </style>
 
