@@ -1,15 +1,15 @@
 body {
-    font-family: sans-serif;
+    font-family: Arial;
     margin: 2rem;
 }
 
 img {
-    width: 900px;
-    max-width: 100%;
+    width: 1024px;
+    max-width: 90%;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 iframe {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
