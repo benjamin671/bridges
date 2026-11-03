@@ -5,7 +5,9 @@
     <image href="map.jpg"
        x="0" y="0"
        width="862" height="665"
-       preserveAspectRatio="none" />
+       preserveAspectRatio="none" >
+         hmmmmm
+    </image>
 
     <style>
         .hotspot {
