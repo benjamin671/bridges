@@ -27,6 +27,12 @@
         <title>Alfred-Hoffmann-Brücke</title>
         <rect class="hotspot"
               x="383" y="2" width="82" height="65"/>
+            <text x="383" y="2"
+          font-size="16"
+          fill="white"
+          font-weight="bold">
+        Alfred-Hoffmann-Brücke
+    </text>
     </a>
 
     <a href="Friedenstunnel.html" target="_top">
