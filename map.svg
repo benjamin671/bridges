@@ -11,7 +11,7 @@
 
     <style>
         .hotspot {
-            fill: rgba(0, 255, 0, 0.15);
+            fill: rgba(0, 0, 255, 0.15);
             stroke: transparent;
             stroke-width: 2;
             cursor: pointer;
@@ -20,7 +20,7 @@
 
         a:hover .hotspot,
         a:focus .hotspot {
-            fill: rgba(0, 0, 255, 0.4);
+            fill: rgba(0, 255, 0, 0.4);
             stroke: #00ff00;
         }
     </style>
