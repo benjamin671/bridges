@@ -14,7 +14,7 @@ iframe {
     margin-bottom: 2rem;
 }
 
-#hotspotGif {
+hotspotGif {
     display: none;
     position: fixed;
     width: 200px;
