@@ -60,48 +60,43 @@
 
 <img id="hotspotGif" src="animation.gif" alt="Animation">
 
-<script>
-    const object = document.getElementById("karte");
+<script>const object = document.getElementById("karte");
 
-    object.addEventListener("load", () => {
+object.addEventListener("load", () => {
 
-        const svg = object.contentDocument;
-        const video = document.getElementById("hotspotVideo");
+    const svg = object.contentDocument;
+    const gif = document.getElementById("hotspotGif");
 
-        svg.querySelectorAll(".hotspot").forEach(hotspot => {
+    svg.querySelectorAll(".hotspot").forEach(hotspot => {
 
-            hotspot.addEventListener("mouseenter", () => {
+        hotspot.addEventListener("mouseenter", () => {
 
-                const rect = hotspot.getBoundingClientRect();
-                const matrix = hotspot.getScreenCTM();
+            const rect = hotspot.getBoundingClientRect();
+            const matrix = hotspot.getScreenCTM();
 
-                const point = object.getBoundingClientRect();
+            const point = object.getBoundingClientRect();
 
-                video.style.left =
-                    (point.left + (rect.left + rect.width / 2) * matrix.a) + "px";
+            gif.style.left =
+                (point.left + (rect.left + rect.width / 2) * matrix.a) + "px";
 
-                video.style.top =
-                    (point.top + rect.top * matrix.d) + "px";
+            gif.style.top =
+                (point.top + rect.top * matrix.d) + "px";
 
-                video.style.display = "block";
-                video.currentTime = 0;
-                video.play();
+            gif.style.display = "block";
 
-            });
+        });
 
-            hotspot.addEventListener("mouseleave", () => {
+        hotspot.addEventListener("mouseleave", () => {
 
-                video.pause();
-                video.currentTime = 0;
-                video.style.display = "none";
-
-            });
+            gif.style.display = "none";
 
         });
 
     });
-    </script>
 
+});
+
+</script>
     
 </body>
 </html>
