@@ -57,6 +57,53 @@
             style="width: 100%; max-width: 862px; height: auto;">
         Interaktive Karte der Brücken
     </object> 
+
+<video id="hotspotVideo" muted playsinline>
+        <source src="animation.mp4" type="video/mp4">
+    </video>
+
+<script>
+    const object = document.getElementById("karte");
+
+    object.addEventListener("load", () => {
+
+        const svg = object.contentDocument;
+        const video = document.getElementById("hotspotVideo");
+
+        svg.querySelectorAll(".hotspot").forEach(hotspot => {
+
+            hotspot.addEventListener("mouseenter", () => {
+
+                const rect = hotspot.getBoundingClientRect();
+                const matrix = hotspot.getScreenCTM();
+
+                const point = object.getBoundingClientRect();
+
+                video.style.left =
+                    (point.left + (rect.left + rect.width / 2) * matrix.a) + "px";
+
+                video.style.top =
+                    (point.top + rect.top * matrix.d) + "px";
+
+                video.style.display = "block";
+                video.currentTime = 0;
+                video.play();
+
+            });
+
+            hotspot.addEventListener("mouseleave", () => {
+
+                video.pause();
+                video.currentTime = 0;
+                video.style.display = "none";
+
+            });
+
+        });
+
+    });
+    </script>
+
     
 </body>
 </html>
