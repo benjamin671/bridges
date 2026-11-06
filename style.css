@@ -14,7 +14,7 @@ iframe {
     margin-bottom: 2rem;
 }
 
-#hotspotVideo {
+#hotspotGif {
     display: none;
     position: fixed;
     width: 200px;
@@ -22,5 +22,4 @@ iframe {
     z-index: 9999;
     pointer-events: none;
     transform: translate(-50%, -100%);
-    border-radius: 10px;
 }
